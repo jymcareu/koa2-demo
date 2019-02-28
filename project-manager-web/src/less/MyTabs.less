@@ -1,0 +1,27 @@
+.tabs{
+  overflow: visible;
+  :global{
+    .ant-tabs-bar{
+      border-bottom: none;
+      margin: 0 0 2px 0;
+    }
+    .ant-tabs-tab-active{
+      color: #00B5C5 ;
+    }
+    .ant-tabs-nav .ant-tabs-tab:hover {
+      color: #00b5c5;
+    }
+    .ant-tabs-tab::after {
+      position: absolute;
+      margin-left: 30px;
+      content: '|';
+      color: #dddddd;
+    }
+    .ant-tabs-tab:last-child::after {
+      content: '';
+    }
+    .ant-tabs-ink-bar {
+      background-color: #00a69d;
+    }
+  }
+}

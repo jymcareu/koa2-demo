@@ -1,0 +1,51 @@
+@import "../less/vendor-prefixes";
+@import "../less/variables";
+.myTable {
+  :global {
+    .ant-table-thead {
+      .wpColumn, .ant-table-selection-column {
+        background-color: @base-color;
+        text-align: center;
+        color: #000000;
+      }
+      tr {
+        th {
+          border-right: 1px solid #ffffff;
+        }
+      }
+    }
+    .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th{
+      background-color: @base-color;
+      text-align: center;
+      color: #000000;
+    }
+
+    .ant-table-tbody {
+      .wpColumn {
+        background-color: #ffffff;
+        text-align: center;
+        color: #666666;
+        padding: 6px 8px !important;
+      }
+    }
+    .ant-table-row {
+      height: 42px;
+    }
+    .ant-checkbox-indeterminate {
+      background-color: @base-color;
+    }
+    .ant-checkbox-checked {
+      .ant-checkbox-inner {
+        background-color: @base-color;
+      }
+      .ant-checkbox-inner:visited {
+        border-color: @base-color;
+      }
+    }
+    .ant-table-fixed-right {
+      .ant-table-header {
+        background-color: #e1e9f5;
+      }
+    }
+  }
+}

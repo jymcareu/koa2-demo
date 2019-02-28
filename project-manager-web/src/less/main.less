@@ -1,0 +1,186 @@
+html {
+  overflow: auto;
+}
+body {
+  min-width: 1366px;
+  min-height: 600px;
+  height: auto !important;
+}
+#root{
+  height: 100%;
+}
+// 公共less
+@import "./vendor-prefixes";
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+:focus {
+  outline: 1px;
+}
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  background: transparent;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+.create-padding(@i:2) when (@i<=30) {
+  .lb-padding-@{i} {
+    padding: 0px + @i;
+  }
+  .lb-padding-left-@{i} {
+    padding-left: 0px + @i;
+  }
+  .lb-padding-right-@{i} {
+    padding-right: 0px + @i;
+  }
+  .lb-padding-top-@{i} {
+    padding-top: 0px + @i;
+  }
+  .lb-padding-bottom-@{i} {
+    padding-bottom: 0px + @i;
+  }
+  .lb-padding-lr-@{i} {
+    padding-left: 0px + @i;
+    padding-right: 0px + @i;
+  }
+  .create-padding(@i+2);
+}
+.create-padding();
+
+.create-margin(@i:2) when (@i<=30) {
+  .lb-margin-@{i} {
+    margin: 0px + @i;
+  }
+  .lb-margin-left-@{i} {
+    margin-left: 0px + @i;
+  }
+  .lb-margin-right-@{i} {
+    margin-right: 0px + @i;
+  }
+  .lb-margin-top-@{i} {
+    margin-top: 0px + @i;
+  }
+  .lb-margin-bottom-@{i} {
+    margin-bottom: 0px + @i;
+  }
+  .lb-margin-lr-@{i} {
+    margin-left: 0px + @i;
+    margin-left: 0px + @i;
+  }
+  .create-margin(@i+2);
+}
+.create-margin();
+
+//line-height值设置
+.lb-lineHeight-30 {
+  line-height: 30px;
+}
+.lb-lineHeight-40 {
+  line-height: 40px;
+}
+.lb-lineHeight-50 {
+  line-height: 50px;
+}
+.lb-cursor {
+  cursor: pointer;
+}
+.lb-cursor-disable {
+  cursor: not-allowed !important;
+}
+//阴影
+.lb-boxShadow {
+  .box-shadow(0 0 10px 0px rgba(0, 0, 0, 0.3));
+}
+//圆角
+.lb-border-radio-20 {
+  .border-radius(20px)
+}
+.lb-border-radio-10 {
+  .border-radius(10px)
+}
+.lb-border-radio-5 {
+  .border-radius(5px)
+}
+.lb-overflow-h {
+  overflow: hidden;
+}
+.lb-overflow-auto {
+  overflow: auto;
+}
+.lb-float-r {
+  float: right;
+}
+.lb-float-l {
+  float: left;
+}
+.lb-height-100 {
+  height: 100%;
+}
+.lb-color-red {
+  color: red;
+}

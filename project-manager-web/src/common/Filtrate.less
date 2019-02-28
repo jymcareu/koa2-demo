@@ -1,0 +1,105 @@
+@import "../less/variables";
+.base {
+  min-height: @filtrate-h;
+  padding-top: 4px;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border: @base-border;
+  border-radius: @base-radius;
+  box-shadow: @base-shadow;
+  :global {
+    .ant-calendar-picker-input.ant-input {
+      width: 100%;
+    }
+    .ant-select, .ant-input {
+      width: 140px;
+    }
+    .ant-row {
+      margin-left: 16px;
+    }
+    .ant-form-item {
+      margin-right: 0
+    }
+    .ant-form-item-label {
+      min-width: 100px;
+    }
+    .longSelect .ant-select{
+      width: 100%;
+      min-width: 140px;
+      max-width: 600px;
+    }
+  }
+}
+.hashUnderBtn {
+  height: 87px;
+}
+.underBtn {
+  color: rgba(0, 0, 0, 0.85);
+}
+.button, .button:focus, .button:hover {
+  border-color: #36adb3;
+  height: 24px;
+  background: -webkit-linear-gradient(#00E3C0, #5B98D5); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#00E3C0, #5B98D5); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#00E3C0, #5B98D5); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#00E3C0, #5B98D5); /* 标准的语法（必须放在最后） */
+}
+.stage {
+  margin-left: 10px;
+  margin-top: 10px;
+  text-align: center;
+  width: 160px;
+  display: inline-block;
+  height: 115px;
+  :global {
+    .ant-tag-checkable {
+      color: #ffffff;
+    }
+    .ant-tag-checkable.ant-tag-checkable-checked {
+      color: #00ebf6;
+    }
+  }
+  .tag {
+    margin-top: 5px;
+    span {
+      color: #ffffff;
+      font-size: 12px;
+      cursor: pointer;
+    }
+  }
+}
+.afterspan {
+  color: #000;
+  margin-left: 5px;
+  line-height: 38px;
+}
+.remind {
+  padding-left: 15px;
+}
+.range-picker {
+  :global {
+    .ant-form-item-control-wrapper {
+      min-width: 200px;
+    }
+  }
+}
+.extdiv {
+  //height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.exitbtn {
+  border-radius: 10px;
+}
+
+.checkbox{
+  :global{
+    .ant-checkbox-checked .ant-checkbox-inner{
+      border-color:#00b5c5;
+      background: #00a69d;
+    }
+  }
+}
+

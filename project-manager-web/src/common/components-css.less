@@ -1,0 +1,262 @@
+@import "../less/vendor-prefixes";
+@import "../less/variables";
+
+.wp-btn-search {
+  background-color: #08AF22;
+  color: #FFFFFF;
+  border-color: #08AF22;
+}
+
+.wp-H {
+  height: 100%;
+}
+
+// 筛选条件
+.wp-components-bgc {
+  background-color: @white;
+  border-radius: 6px;
+  height: 42px;
+  margin: @base-margin;
+  .ant-form-item-control-wrapper {
+    margin-top: 5px;
+  }
+  .wp-btn-row {
+    width: auto !important;
+    .ant-form-item-control-wrapper {
+      margin-top: 0;
+      vertical-align: unset;
+    }
+  }
+  .ant-form-item-control {
+    line-height: 0;
+  }
+  .ant-form {
+    line-height: 42px;
+    height: 100%;
+  }
+  .box-shadow(@base-shadow);
+  border: @base-border;
+  .ant-form-item {
+    vertical-align: middle;
+  }
+  .ant-form-item-label {
+    width: @label-w;
+  }
+  .ant-row {
+    width: @ant-row-w;
+  }
+  .ant-calendar-picker, .ant-select-selection--single {
+    //margin-top: 5px;
+  }
+  .range-picker {
+    width: 280px;
+    .ant-form-item-control-wrapper {
+      width: 185px;
+    }
+  }
+  .month-picker{
+    width: 200px;
+  }
+  .ant-form-item {
+    margin: 0;
+  }
+}
+
+.wp-btn{
+  background-color: @base-color !important;
+  height: 22px;
+  .box-shadow(0 0 2px rgba(0, 0, 0, 0.2));
+  color: rgba(255, 255, 255, 1) !important;
+  border-color: @base-color;
+}
+
+.wp-clear-btn{
+  .box-shadow(0 0 2px rgba(0, 0, 0, 0.2));
+  height: 23px;
+  background-color: #FFFFFF !important;
+  color: #666 !important;
+  border: 1px solid #c9c9c9 !important;
+}
+
+// 表格容器
+.wp-container {
+  border: @base-border;
+  overflow: hidden;
+  .box-shadow(@base-shadow);
+  .border-radius(@base-radius);
+  height: calc(~"100vh - 123px");
+  margin: @base-margin;
+  background-color: @white;
+  .wp-container-content{
+    .ant-pagination{
+      margin-right: 16px;
+    }
+  }
+}
+
+.wp-container-header {
+  border-bottom: 1px solid rgba(196, 196, 196, 1);
+  height: 26px;
+  line-height: 26px;
+  i {
+    color: @base-color
+  }
+  span {
+    cursor: pointer;
+  }
+  .wp-line {
+    width: 1px;
+    margin-left: 10px;
+    border-right: 1px solid rgba(196, 196, 196, 1);
+  }
+  .wp-container-header-subtitle{
+    text-align: center;
+  }
+}
+
+// table 样式
+.wp-table {
+  .ant-checkbox-indeterminate{
+    background-color: @base-color !important;
+  }
+  .ant-checkbox-checked{
+    .ant-checkbox-inner{
+      background-color: @base-color ;
+    }
+    .ant-checkbox-inner:visited{
+      border-color: @base-color !important;
+    }
+  }
+  .ant-table-fixed-right{
+    .ant-table-header{
+      background-color: #d0f1f2;
+    }
+  }
+  .ant-table-tbody {
+    .wp-myTable {
+      background-color: #ffffff;
+      text-align: center;
+      color: #333333;
+    }
+    .ant-table-row{
+      //height: 40px !important;
+    }
+  }
+  .ant-table-thead {
+    .wp-myTable {
+      background-color: @light-blue !important;
+      text-align: center !important;
+    }
+  }
+  .ant-table-thead{
+    .ant-table-selection-column{
+      background-color: @light-blue !important;
+    }
+    > tr > th{
+      padding: 0
+    }
+  }
+  .ant-table-bordered .ant-table-thead > tr > th{
+    border-right: 1px solid @white;
+  }
+  .ant-table-bordered .ant-table-tbody{
+    .wp-myTable{
+      border-right: 1px solid @white;
+    }
+    .ant-table-selection-column{
+      border-right: 1px solid #efefef ;
+    }
+  }
+  .ant-checkbox-indeterminate{
+    &:focus{
+      border: 1px solid @base-color;
+    }
+    .ant-checkbox-inner{
+      background-color: @base-color;
+      border: 1px solid @base-color;
+    }
+  }
+}
+
+// 模态框
+.wp-modal {
+  .ant-modal-content {
+    width: 858px;
+    height: 442px;
+    overflow: hidden;
+  }
+  .ant-form {
+    line-height: 42px;
+    height: 100%;
+  }
+  .ant-calendar-picker {
+    width: 176px;
+  }
+  .ant-select-selection--single, rangerPicker {
+    //margin-top: 4px;
+  }
+  .ant-row {
+    width: 265px;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+  .ant-modal-header {
+    background-color: @light-blue;
+    height: 42px;
+  }
+  .wp-tab {
+    border-bottom: 1px solid @light-blue;
+    height: 24px;
+    width: 830px;
+  }
+  .wp-tab-header {
+    height: 100%;
+    width: 64px;
+    text-align: center;
+    line-height: 200%;
+    color: #1d1d1d;
+    background-color: @light-blue;
+    .border-top-radius(@base-radius);
+  }
+}
+.wp-info-modal {
+  .ant-modal-content {
+    width: 650px;
+    max-height: 600px;
+    overflow: hidden;
+  }
+  .ant-modal-header {
+    background-color: @light-blue;
+    height: 42px;
+  }
+  .wp-tab {
+    border-bottom: 1px solid @light-blue;
+    height: 24px;
+    width: 830px;
+  }
+  .wp-tab-header {
+    height: 100%;
+    width: 64px;
+    text-align: center;
+    line-height: 200%;
+    color: #1d1d1d;
+    background-color: @light-blue;
+    .border-top-radius(@base-radius);
+  }
+}
+
+.wp-myModal-form {
+  margin: 4px auto;
+  &>.ant-row{
+    width: 100%;
+  }
+}
+// 分页样式
+.wp-page{
+  .ant-pagination-item-active{
+    background-color: @base-color;
+    &:focus{
+      background-color: @base-color;
+    }
+  }
+}

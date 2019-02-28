@@ -1,0 +1,91 @@
+.commonModal {
+  :global {
+    .ant-modal-content {
+      //width: 640px;
+      padding: 2px 2px 0;
+      border-radius: 6px;
+      .ant-modal-close {
+        background-color: #fff;
+        height: 16px;
+        width: 16px;
+        border-radius: 8px;
+        right: 16px;
+        top: 12px;
+        .ant-modal-close-x {
+          height: 16px;
+          width: 16px;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
+    .ant-modal-body {
+      padding: 6px 24px 18px 24px;
+      max-height: 472px;
+      overflow-y: auto;
+    }
+    .ant-modal-header {
+      background: -webkit-linear-gradient(to right, #427cff, #7fa5ff); /* Safari 5.1 - 6.0 */
+      background: -o-linear-gradient(to right, #427cff, #7fa5ff); /* Opera 11.1 - 12.0 */
+      background: -moz-linear-gradient(to right, #427cff, #7fa5ff); /* Firefox 3.6 - 15 */
+      background: linear-gradient(to right, #427cff, #7fa5ff); /* 标准的语法（必须放在最后） */
+      height: 38px;
+      display: flex;
+      align-items: center;
+      border-radius: 6px 6px 0 0;
+      .ant-modal-title {
+        color: #fff;
+        font-weight: normal;
+      }
+    }
+    .ant-modal-footer {
+      border-top: none;
+      //position: relative;
+      //padding: 0;
+      //top: 14px;
+    }
+  }
+}
+.jlModal{
+  :global{
+    .ant-form-item{
+      margin-bottom: 10px;
+      height: 60px;
+      .ant-form-item-label{
+        line-height: 20px;
+        margin-bottom: 5px;
+      }
+      .ant-form-item-control{
+        line-height: 33px;
+        .ant-input,
+        .ant-select-selection--single{
+          height: 28px;
+          .ant-select-selection__rendered{
+            line-height: 28px;
+          }
+        }
+        .ant-form-explain{
+          font-size: 12px;
+        }
+        .ant-calendar-picker,
+        .ant-time-picker{
+          width: 100%;
+          .ant-time-picker-input{
+            height: 28px;
+          }
+        }
+      }
+
+    }
+  }
+}
+.saveBtn {
+  background-color: #6997ff !important;
+  height: 32px;
+  width: 136px;
+  border-radius: 14px;
+  color: rgba(255, 255, 255, 1) !important;
+}
+.showCenter {
+  text-align: center;
+}

@@ -1,0 +1,24 @@
+:global {
+  .ant-layout-sider-collapsed {
+    .wp-nav-font {
+      max-width: 0;
+      display: inline-block;
+      opacity: 0;
+    }
+  }
+}
+@keyframes navAnimation{
+  from {color:#38cef3}
+  to{color:#2ba5ab}
+}
+.navItem{
+  color: #46DAFF;
+  margin-right: 8px;
+  font-size: 16px;
+  animation: navAnimation 10s infinite alternate;
+}
+.subNavItem{
+  color: #FFFFFF;
+  margin-right: 8px;
+  font-size: 16px;
+}
